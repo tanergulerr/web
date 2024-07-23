@@ -110,24 +110,22 @@
             margin-bottom: 20px;
         }
         .language-select button {
-            background-color: #fff;
-            color: #000;
+            background-color: transparent;
             border: none;
-            padding: 10px 20px;
-            margin: 0 10px;
             cursor: pointer;
-            font-size: 16px;
+            margin: 0 10px;
         }
-        .language-select button:hover {
-            background-color: #ccc;
+        .language-select img {
+            width: 32px;
+            height: 32px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="language-select">
-            <button onclick="setLanguage('tr')">Türkçe</button>
-            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('tr')"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Türkçe"></button>
+            <button onclick="setLanguage('en')"><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="English"></button>
         </div>
         
         <img src="https://i.hizliresim.com/6begwl3.jpg" alt="Taner Güler" class="profile-img">
@@ -238,7 +236,7 @@
                 document.querySelector('h3.section-title:last-of-type').innerText = 'Contact';
             } else {
                 document.querySelector('h3.section-title').innerText = 'Ben Kimim?';
-                document.querySelector('.about-text').innerText = ' olarak çalışıyorum ve sanatımı sürekli olarak geliştirmeyi hedefliyorum. Görsel tasarım, karakter ve ortam tasarımı konularında derin bir tutkuya sahibim ve bu alanlarda kendimi sürekli olarak yeniliyorum. Amacım, yaratıcı bir şekilde oyun deneyimlerine katkıda bulunmak ve sektörde ilerlemek. Sektördeki yenilikleri takip ediyor, yeni teknolojileri öğrenmeye ve uygulamaya her zaman açığım. Profilimdeki çalışmalarımı görmek için benimle bağlantıya geçmenizden memnuniyet duyarım.';
+                document.querySelector('.about-text').innerText = 'Merhaba! Ben Taner, Beykent Üniversitesi Çok Boyutlu Modelleme ve Animasyon bölümünden mezun oldum. Hayalim olan oyun sektöründe Game Artist olarak çalışıyorum ve sanatımı sürekli olarak geliştirmeyi hedefliyorum. Görsel tasarım, karakter ve ortam tasarımı konularında derin bir tutkuya sahibim ve bu alanlarda kendimi sürekli olarak yeniliyorum. Amacım, yaratıcı bir şekilde oyun deneyimlerine katkıda bulunmak ve sektörde ilerlemek. Sektördeki yenilikleri takip ediyor, yeni teknolojileri öğrenmeye ve uygulamaya her zaman açığım. Profilimdeki çalışmalarımı görmek için benimle bağlantıya geçmenizden memnuniyet duyarım.';
                 document.querySelector('h3.works').innerText = 'Çalışmalarım';
                 document.querySelector('h3.section-title:last-of-type').innerText = 'İletişim';
             }
@@ -246,4 +244,3 @@
     </script>
 </body>
 </html>
-
